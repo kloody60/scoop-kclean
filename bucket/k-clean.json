@@ -1,0 +1,23 @@
+{
+    "version": "1.0.4",
+    "description": "Windows cleaner, disk analyzer and RAM optimizer with auto-updates (Arabic/English).",
+    "homepage": "https://kloody60.github.io/K-Clean/",
+    "license": "Freeware",
+    "url": "https://github.com/kloody60/K-Clean/releases/download/v1.0.4/K-Clean-Setup.exe",
+    "hash": "b928e88767ae3dd743e80669ab0a87b7001c5eb5dcb31606adeaf7b715af5901",
+    "installer": {
+        "file": "K-Clean-Setup.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "uninstaller": {
+        "script": "& \"${env:ProgramFiles(x86)}\K-Clean\Uninstall.exe\" /uninstall /S"
+    },
+    "checkver": {
+        "github": "https://github.com/kloody60/K-Clean"
+    },
+    "autoupdate": {
+        "url": "https://github.com/kloody60/K-Clean/releases/download/v$version/K-Clean-Setup.exe"
+    }
+}
